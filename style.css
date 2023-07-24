@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Cursed Timer ULiL;
+    src: url('./CursedTimerUlil-Aznm.ttf');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: unset;
+    border: unset;
+    font-size: inherit;
+}
+
+:root {
+    --bg-primary: #1B244A;
+}
+
+body {
+    background-color: var(--bg-primary);
+}
+
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 35.9375rem;
+    height: 24.0625rem;
+}
+
+.board-title {
+    color: #EEE;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.24331rem;
+}
+
+.score,
+.add-score-button,
+.new-game-button {
+    font-family: Cursed Timer ULiL;
+}
+
+.score {
+    color: #F94F6D;
+    text-align: center;
+    font-size: 5.625rem;
+    line-height: 7.91663rem;
+    background-color: #080001;
+    border-radius: 0.31rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.63rem;
+    text-align: right;
+    padding-right: 1.25rem;
+    width: 10rem;
+    margin-left: 1rem;
+}
+
+.add-score-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-score-button {
+    cursor: pointer;
+    color: #9AABD8;
+    font-size: 1.125rem;
+    padding: .5rem;
+    margin: auto .69rem;
+    border-radius: 0.3125rem;
+    border: 2px solid #9AABD8;
+}
+
+.extra-points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-game-button {
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: .5rem;
+    padding: .5rem 10rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#result {
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: .5rem;
+
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto 2rem auto;
+    padding: .24rem;
+    width: 30rem;
+    text-align: center;
+}

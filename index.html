@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Vite App</title>
+</head>
+
+<body>
+    <div class="score-board">
+        <div class="score-container">
+            <h1 class="board-title">Home</h1>
+            <p class="score" id="home-score">0</p>
+            <div class="add-score-button-container">
+                <button class="add-score-button" onclick="add1Point('home')">+1</button>
+                <button class="add-score-button" onclick="add2Point('home')">+2</button>
+                <button class="add-score-button" onclick="add3Point('home')">+3</button>
+            </div>
+        </div>
+        <div class="score-container">
+            <h1 class="board-title">Guest</h1>
+            <p class="score" id="guest-score">0</p>
+            <div class="add-score-button-container">
+                <button class="add-score-button" onclick="add1Point('guest')">+1</button>
+                <button class="add-score-button" onclick="add2Point('guest')">+2</button>
+                <button class="add-score-button" onclick="add3Point('guest')">+3</button>
+            </div>
+        </div>
+    </div>
+    <div id="result"></div>
+    <div class="extra-points">
+        <button class="new-game-button" onclick="newGame()">New Game</button>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
